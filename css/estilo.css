@@ -1,11 +1,21 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: titulo;
-    src: url() format();
+@media screen and (max-width: 720px){
+    main {
+        max-width: 90vw;
+    }
 }
 
-@media screen {
-    
+@media screen and (min-width: 720px) and (max-width: 992px) {
+    main {
+        max-width: 80vw;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        max-width: 70vw;
+        transition: max-width 0.3s ease-in-out;
+    }
 }
 
