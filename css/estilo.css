@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* MOBILE FIRST */
+
 /*------------ Reset da página ---------------*/
 *{
     margin: 0;
@@ -19,6 +21,10 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 ul, ol{
     list-style: none;
 }
@@ -26,8 +32,28 @@ ul, ol{
 ul > li {
     list-style-type: none;
 }
-/*----------- FIM Reset da página ------------ */
+/*----------- FIM RESET PÁGINA ------------ */
 
+/* ---------- INÍCIO CABEÇALHO -------------*/
+header {
+    background-color: darkcyan;
+}
+
+header h1 {
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.211);
+}
+
+header li {
+    display: inline-block;
+    color: white;
+}
+/* ---------- FIM CABEÇALHO -------------*/
+
+
+/* ---------- INÍCIO PRINCIPAL -------------*/
 main {
     background-color: white;
     margin: auto;
@@ -38,5 +64,21 @@ main {
 main p {
     text-align: justify;
     text-indent: 20px;
+}/* ---------- FIM PRINCIPAL -------------*/
+
+
+/* ---------- INÍCIO RODAPÉ ------------- */
+footer {
+    background-color: darkcyan;
+    padding: 20px;
 }
+
+footer p {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 23, 23, 0.407);
+}
+/* ---------- FIM RODAPÉ ------------- */
+
+
 
