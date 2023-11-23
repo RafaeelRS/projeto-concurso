@@ -50,6 +50,14 @@ header li {
     display: inline-block;
     color: white;
 }
+
+nav {
+    display: none;
+}
+
+#menu {
+    display: block;
+}
 /* ---------- FIM CABEÇALHO -------------*/
 
 
