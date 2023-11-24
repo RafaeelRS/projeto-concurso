@@ -17,8 +17,8 @@
     src: url("../fonts/Amatic_SC/AmaticSC-Regular.ttf") format("truetype");
 }
 @font-face {
-    font-family: bungee;
-    src: url("../fonts/Bungee/Bungee-Regular.ttf") format("truetype");
+    font-family: titulo;
+    src: url("../fonts/Advent_Pro/AdventPro-VariableFont_wdth\,wght.ttf") format("truetype");
 }
 
 /* MOBILE FIRST */
@@ -27,7 +27,7 @@
     --fonte-pixel2: pixel2, display;
     --fonte-texto: roboto, verdana, sans-serif;
     --fonte-destaque: amatic, display;
-    --fonte-destaque2: bungee, display, sans-serif;
+    --fonte-titulo: titulo, display, sans-serif;
 }
 
 /*------------ Reset da página ---------------*/
@@ -70,9 +70,9 @@ header {
 }
 
 header h1 {
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-titulo);
     padding-top: 20px;
-    font-size: 2em;
+    font-size: 2.2em;
     text-align: center;
     color: white;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.377);
@@ -82,7 +82,7 @@ header p {
     text-align: center;
     color: white;
     font-family: var(--fonte-destaque);
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 header li {
