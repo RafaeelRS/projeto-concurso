@@ -1,6 +1,33 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: pixel;
+    src: url("../fonts/Press_Start_2P/PressStart2P-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: pixel2;
+    src: url("../fonts/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: roboto;
+    src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: amatic;
+    src: url("../fonts/Amatic_SC/AmaticSC-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: bungee;
+    src: url("../fonts/Bungee/Bungee-Regular.ttf") format("truetype");
+}
+
 /* MOBILE FIRST */
+:root {
+    --fonte-titulo: pixel2, display;
+    --fonte-texto: roboto, verdana, sans-serif;
+    --fonte-destaque: amatic, display;
+    --fonte-destaque2: bungee, display, sans-serif;
+}
 
 /*------------ Reset da página ---------------*/
 *{
@@ -18,7 +45,7 @@ html{
 
 body{
     background-color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte-texto);
 }
 
 a {
@@ -34,19 +61,23 @@ ul > li {
 }
 /*----------- FIM RESET PÁGINA ------------ */
 
+/* Variáveis */
+
 /* ---------- INÍCIO CABEÇALHO -------------*/
 header {
     background-color: darkcyan;
 }
 
 header h1 {
-    font-size: 1.5em;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
     text-align: center;
     color: white;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.211);
 }
 
 header li {
+    padding: 5px;
     display: inline-block;
     color: white;
 }
@@ -55,7 +86,13 @@ nav {
     display: none;
 }
 
+nav a {
+    color: white;
+}
+
 #menu {
+    padding: 5px;
+    font-size: 2em;
     display: block;
     color: white;
     cursor: pointer;
@@ -68,7 +105,7 @@ main {
     background-color: white;
     margin: auto;
     max-width: 90vw;
-    transition: max-width 0.3s ease-in-out;
+    transition: max-width 0.4s ease-in-out;
 }
 
 main p {
