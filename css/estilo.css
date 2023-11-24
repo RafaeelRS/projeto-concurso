@@ -70,12 +70,19 @@ header {
 }
 
 header h1 {
-    font-family: var(--fonte-pixel);
+    font-family: var(--fonte-destaque);
     padding-top: 20px;
-    font-size: 1em;
+    font-size: 2em;
     text-align: center;
     color: white;
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.377);
+}
+
+header p {
+    text-align: center;
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 1em;
 }
 
 header li {
