@@ -30,6 +30,13 @@
     --fonte-pixel: pixel, display;
 }
 
+/* Fundo gradiente para o cabeçalho em TELAS PEQUENAS */
+@media screen and (max-width: 720px) {
+    header {
+        background-image: linear-gradient(to top, rgb(0, 211, 211), rgb(0, 121, 121), rgb(0, 65, 65), rgb(0, 38, 38));
+    }
+}
+
 @media screen and (min-width: 720px) {
 
     body {
@@ -37,7 +44,7 @@
     }
 
     /* -------------------------------------------------------- */
-    #cabecalho header{
+    header {
         background-color: darkcyan;
     }
 
@@ -64,9 +71,10 @@
     /* -------------------------------------------------------- */
 
     main {
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        padding: 10px;
+        border-radius: 0 0 6px 6px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.234);
+        margin-bottom: 8px;
     }
 }
 
