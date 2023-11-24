@@ -1,9 +1,67 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: pixel;
+    src: url("../fonts/Press_Start_2P/PressStart2P-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: comfortaa;
+    src: url("../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: roboto;
+    src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: amatic;
+    src: url("../fonts/Amatic_SC/AmaticSC-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: titulo;
+    src: url("../fonts/Advent_Pro/AdventPro-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+/* Variáveis */
+:root {
+    --fonte-titulo: titulo, display, sans-serif;
+    --fonte-destaque: amatic, display;
+    --fonte-destaque2: comfortaa, display;
+    --fonte-texto: roboto, verdana, sans-serif;
+    --fonte-pixel: pixel, display;
+}
+
 @media screen and (min-width: 720px) {
+
     body {
+        background-color: rgba(190, 255, 255, 0.829);
+    }
+
+    /* -------------------------------------------------------- */
+    #cabecalho header{
         background-color: darkcyan;
     }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    header li {
+        display: inline-block;
+    }
+    
+    header a {
+        font-family: var(--fonte-texto);
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #itens {
+        display: inline-block;
+    }
+
+    /* -------------------------------------------------------- */
 
     main {
         padding: 20px;
