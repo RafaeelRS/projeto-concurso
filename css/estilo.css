@@ -141,6 +141,11 @@ aside iframe{
     overflow: auto;
 }
 
+figure img {
+    width: 100%;
+    text-align: center;
+}
+
 /* ---------- INÍCIO RODAPÉ ------------- */
 footer {
     background-color: darkcyan;
