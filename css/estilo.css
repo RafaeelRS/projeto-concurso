@@ -5,8 +5,8 @@
     src: url("../fonts/Press_Start_2P/PressStart2P-Regular.ttf") format("truetype");
 }
 @font-face {
-    font-family: pixel2;
-    src: url("../fonts/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf") format("truetype");
+    font-family: comfortaa;
+    src: url("../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf") format("truetype");
 }
 @font-face {
     font-family: roboto;
@@ -23,11 +23,11 @@
 
 /* MOBILE FIRST */
 :root {
-    --fonte-pixel: pixel, display;
-    --fonte-pixel2: pixel2, display;
-    --fonte-texto: roboto, verdana, sans-serif;
-    --fonte-destaque: amatic, display;
     --fonte-titulo: titulo, display, sans-serif;
+    --fonte-destaque: amatic, display;
+    --fonte-destaque2: comfortaa, display;
+    --fonte-texto: roboto, verdana, sans-serif;
+    --fonte-pixel: pixel, display;
 }
 
 /*------------ Reset da página ---------------*/
@@ -66,11 +66,12 @@ ul > li {
 
 /* ---------- INÍCIO CABEÇALHO -------------*/
 header {
-    background-image: linear-gradient(to bottom,  rgb(0, 202, 202), darkcyan, rgb(0, 89, 89));
+    background-image: linear-gradient(to top, rgb(0, 211, 211), rgb(0, 121, 121), rgb(0, 65, 65), rgb(0, 38, 38));
 }
 
 header h1 {
-    font-family: var(--fonte-titulo);
+    font-family: var(--fonte-destaque2);
+    font-variant: small-caps;
     padding-top: 20px;
     font-size: 2.2em;
     text-align: center;
@@ -82,7 +83,8 @@ header p {
     text-align: center;
     color: white;
     font-family: var(--fonte-destaque);
-    font-size: 1.2em;
+    font-variant: small-caps;
+    font-size: 1.5em;
 }
 
 header li {
@@ -96,6 +98,8 @@ nav {
 }
 
 nav a {
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;
     color: white;
     font-weight: lighter;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.114);
@@ -120,9 +124,9 @@ main {
 }
 
 main h2 {
-    font-family: var(--fonte-destaque);
+    font-family: var(--fonte-destaque2);
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.3em;
     font-weight: normal;
     padding: 10px;
 }
