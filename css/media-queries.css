@@ -77,14 +77,17 @@
         margin-bottom: 8px;
     }
 
-    aside iframe {
-        display: block;
-        margin: auto;
-        width: 50%;
-        overflow-x: auto;
+    section h2 {
+        font-family: var(--fonte-destaque2);
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: normal;
+        padding: 10px;
     }
 
     figure img {
+        display: block;
+        margin: auto;
         width: 50%;
         text-align: center;
 
