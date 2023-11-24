@@ -57,6 +57,8 @@ nav {
 
 #menu {
     display: block;
+    color: white;
+    cursor: pointer;
 }
 /* ---------- FIM CABEÇALHO -------------*/
 
