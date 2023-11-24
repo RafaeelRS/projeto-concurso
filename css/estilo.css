@@ -23,7 +23,8 @@
 
 /* MOBILE FIRST */
 :root {
-    --fonte-titulo: pixel2, display;
+    --fonte-pixel: pixel, display;
+    --fonte-pixel2: pixel2, display;
     --fonte-texto: roboto, verdana, sans-serif;
     --fonte-destaque: amatic, display;
     --fonte-destaque2: bungee, display, sans-serif;
@@ -65,15 +66,16 @@ ul > li {
 
 /* ---------- INÍCIO CABEÇALHO -------------*/
 header {
-    background-color: darkcyan;
+    background-image: linear-gradient(to bottom,  rgb(0, 202, 202), darkcyan, rgb(0, 89, 89));
 }
 
 header h1 {
-    font-family: var(--fonte-titulo);
-    font-size: 2em;
+    font-family: var(--fonte-pixel);
+    padding-top: 20px;
+    font-size: 1em;
     text-align: center;
     color: white;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.211);
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.377);
 }
 
 header li {
@@ -108,9 +110,17 @@ main {
     transition: max-width 0.4s ease-in-out;
 }
 
+main h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.8em;
+    font-weight: normal;
+    padding: 10px 0;
+}
+
 main p {
     text-align: justify;
     text-indent: 20px;
+    line-height: 1.5em;
 }/* ---------- FIM PRINCIPAL -------------*/
 
 
